@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-ts-starter",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node --project server/tsconfig.json server/server-dev.ts",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production ts-node --project 'server/tsconfig.json' server/server-prod.ts",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "latest",
+    "@vue/composition-api": "latest",
+    "@nuxtjs/tailwindcss": "2.0.0",
+    "cross-env": "latest",
+    "nuxt-edge": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "latest",
+    "express": "latest",
+    "eslint": "7.3.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-nuxt": "1.0.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "@nuxtjs/eslint-config-typescript": "2.0.0"
+  },
+  "keywords": []
+}
